@@ -13,9 +13,17 @@ int main()
             if (s.substr(i, 5) == ">>-->")
             {
                 c++;
-                i += 5;
+            }
+                }
+        else if (s[i] == '<')
+        {
+            if (s.substr(i, 5) == "<--<<")
+            {
+                c++;
             }
         }
-        
+        i++;
     }
+    cout << c << endl;
+    return 0;
 }
